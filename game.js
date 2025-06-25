@@ -29,7 +29,7 @@ document.addEventListener('keydown', (event) => {
         if (event.key === 's') players[socket.id].y += 5;
         if (event.key === 'a') players[socket.id].x -= 5;
         if (event.key === 'd') players[socket.id].x += 5;
-
+        
         socket.emit('playerMovement', players[socket.id]);
     }
 });
